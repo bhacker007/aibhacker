@@ -1,29 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <script defer src="face-api.min.js"></script>
-  <script defer src="script.js"></script>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  <head>
+      <title>QNA 2 </title>
+      <meta charset="utf-8">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Hello, world!</title>
 
-    canvas {
-      position: absolute;
-    }
-  </style>
-</head>
-<body>
-  <video id="video" width="720" height="560" autoplay muted></video>
-</body>
+    <style>
+        body{
+          position:relative;
+        }
+        nav{
+            background-color:#008227;
+        }
+
+        #qtop{
+            float: right;
+            padding:10px;
+        }
+
+        #b1{
+            background-color:#71FF40;
+        }
+        #qna1{
+            float:middle;
+            padding-top:50px;
+        }
+        #qtop1{
+            float: left;
+            padding:10px;
+        }
+        #question{
+           padding-left:200px;
+           padding-right:200px;
+        }
+
+    </style>
+  </head>
+  <body data-spy="scrol" data-target="#navbar" data-offset="150">
+    <div>
+        <nav id="nv" class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <a  class="navbar-brand" href="#">QNA</a>
+            </div>
+          </nav>
+    </div>
+    
+    <div id="qtop">
+        <button id="b1" align="right" type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+            Question 1 of 10
+          </button>
+    </div>
+<br>
+ <div id="qna1">
+<h1>Which line of code creates a instance of the Person class?</h1>
+<div id="question">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th><button type="button" class="btn btn-primary btn-lg btn-block">Person.create();</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th ><button type="button" class="btn btn-primary btn-lg btn-block">Person.extend();</th>
+         
+      </tr>
+      <tr>
+        <th><button type="button" class="btn btn-primary btn-lg btn-block">Person.new();</th>
+        
+      </tr>
+      <tr>
+        <th><button type="button" class="btn btn-primary btn-lg btn-block">Person.init();</th>
+       
+      </tr>
+    </tbody>
+  </table>   
+  </div>
+
+  <div id="qtop1">
+        <button id="b1" align="right" type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+            Submit Quiz
+          </button>
+    </div>
+    <div id="qtop">
+            <button id="b1" align="right" type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                Next Question
+              </button>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+      
+  </body>
 </html>
